@@ -1,8 +1,8 @@
 pache aplplication.model;
 
 import java.lang.annotation.Inherited;
-import java.util.HashSet 
-import java.util.set;
+import java.util.HashSet;
+import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,7 +17,7 @@ public class categoria  {
     @Id
     @GeneratedValue(strategy = GenerationType.Identity)
     private long id;
-    @column(unique -true, nullable = false)
+    @column(unique =true, nullable = false)
     private string nome;
 
     @OneToMany(mappedby = "categoria")
