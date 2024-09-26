@@ -1,4 +1,4 @@
-pache aplplication.model;
+package aplplication.model;
 
 import java.lang.annotation.Inherited;
 import java.util.HashSet;
@@ -13,15 +13,15 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 @Entity
 @Table(name = "Categorias")
-public class categoria  {
+public class Categoria  {
     @Id
-    @GeneratedValue(strategy = GenerationType.Identity)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @column(unique =true, nullable = false)
-    private string nome;
+    private String nome;
 
-    @OneToMany(mappedby = "categoria")
-    private set<jogo> jogos = new Hashset<>();
+    @OneToMany(mappedby = ("categoria"))
+    private Set<Jogo> jogos = new HashSet<>();
 
     public long getid() {
         return id;
@@ -31,12 +31,12 @@ public class categoria  {
         this.id = id;
     }
 
-    public string getNome() {
+    public String getNome() {
         return nome;
     }
     
-    public void setnome(string nome) {
-        this.nomr = nome;
+    public void setnome(String nome) {
+        this.nome = nome;
     }
 
     public set<Jogo> getJogos() {

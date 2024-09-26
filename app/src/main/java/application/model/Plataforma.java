@@ -7,7 +7,7 @@ import jakarta.persistence.column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.generetedValue;
 import jakarta.persistence.GenerationType;
-package application.model;
+
 
 import java.util.HashSet;
 import java.util.Set;
@@ -25,7 +25,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "jogos")
-public class Jogo {
+public class Plataforma {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
@@ -61,9 +61,7 @@ public class Jogo {
     this.titulo = titulo;
   }
 
-  public Categoria getCategoria() {
-    return categoria;
-  }
+  
 
   public void setCategoria(Categoria categoria) {
     this.categoria = categoria;
