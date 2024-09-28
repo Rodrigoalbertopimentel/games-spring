@@ -9,6 +9,8 @@ vscode:
       - humao.rest-client
       - vscjava.vscode-gradle
 
+      - redhat.java
+
 ports:
   - port: 8080
     visibility: public

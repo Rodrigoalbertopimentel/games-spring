@@ -18,6 +18,7 @@ public class PlataformaController {
 
     @Autowired
     private PlataformaRepository plataformaRepo;
+
     @RequestMapping("/list")
     public String list(Model ui) {
         ui.addAttribute("plataformas", plataformaRepo.findAll());
