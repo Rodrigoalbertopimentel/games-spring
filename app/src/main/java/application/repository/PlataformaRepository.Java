@@ -2,8 +2,8 @@ package application.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import application.model.Jogo;
+import application.model.Plataforma;
 
-public interface JogoRepository extends CrudRepository<Jogo, Long>{
+public interface PlataformaRepository extends CrudRepository<Plataforma, Long>{
     
 }
